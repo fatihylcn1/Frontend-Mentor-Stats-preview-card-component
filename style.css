@@ -1,0 +1,116 @@
+* {
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+}
+
+.card-container {
+    width: 350px;
+    margin: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-img {
+    background-image: url(Assets/image-header-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card-text {
+    padding-top: 2em;
+}
+
+.card-text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    margin-top: 2em;
+}
+
+.card-text h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexand Deca', sans-serif;
+}
+
+.stats {
+    font-family: 'Lexand deca';
+    color: hsl(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: column;
+    pad: 2em 0;
+}
+
+.one {
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 700px;
+    padding: 0.5em 0;
+    color: #fff;
+}
+
+@media (min-width: 750px) {
+
+    .wrapper {
+        display: flex;
+
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        min-width: 1000px;
+        height: 400px;
+        flex-direction: row-reverse;
+    }
+
+    .card-img {
+        width: 50%;
+        height: 100%;
+        background-image: url(Assets/image-header-desktop.jpg);
+    }
+
+    .card-text {
+        width: 50%;
+        text-align: left;
+        padding: 4em;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+
+    .one {
+        padding-right: 3em;
+    }
+
+    .one h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
